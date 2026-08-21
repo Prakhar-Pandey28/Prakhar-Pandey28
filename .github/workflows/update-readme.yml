@@ -26,6 +26,8 @@ jobs:
         run: node scripts/generate-heatmap.mjs
 
       - name: Regenerate top-languages chart
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/generate-languages.mjs
 
       - name: Commit changes if any

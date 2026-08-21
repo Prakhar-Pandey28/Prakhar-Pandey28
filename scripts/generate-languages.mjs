@@ -23,9 +23,15 @@ const ACCENT = "#8b7cff";
 const FONT = `font-family="ui-monospace,'JetBrains Mono',monospace" font-size="11"`;
 
 async function fetchRepos() {
-  const res = await fetch(`https://api.github.com/users/${USERNAME}/repos?per_page=100`, {
-    headers: { Accept: "application/vnd.github+json", "User-Agent": `${USERNAME}-profile-readme` },
-  });
+  const headers = { Accept: "application/vnd.github+json", "User-Agent": `${USERNAME}-profile-readme` };
+  // Unauthenticated GitHub API calls are capped at 60/hour *per IP* — and
+  // GitHub Actions runners share IP ranges across many concurrent jobs, so
+  // this hits 403s in CI even though it never does locally. The workflow's
+  // own GITHUB_TOKEN (no extra secret needed) raises that to 5000/hour.
+  if (process.env.GITHUB_TOKEN) {
+    headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
+  }
+  const res = await fetch(`https://api.github.com/users/${USERNAME}/repos?per_page=100`, { headers });
   if (!res.ok) throw new Error(`GitHub API returned ${res.status}`);
   return res.json();
 }
