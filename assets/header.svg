@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="688" height="140" viewBox="0 0 688 140">
+  <title>Hi, I'm Prakhar Pandey — AI/ML Engineer</title>
+  <defs>
+    <clipPath id="typeClip">
+      <rect x="0" y="0" width="0" height="46">
+        <animate attributeName="width" from="0" to="392" dur="1.3s" begin="0.15s" fill="freeze" calcMode="spline" keySplines="0.3 0.1 0.2 1"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="688" height="140" rx="14" fill="#0c0d10" stroke="#ffffff1f"/>
+
+  <g transform="translate(24,24)">
+    <text x="0" y="34" font-family="ui-monospace,'JetBrains Mono',monospace" font-weight="600" font-size="28" fill="#f2f2f5" clip-path="url(#typeClip)">Hi, I&#8217;m Prakhar Pandey</text>
+
+    <rect x="393" y="8" width="3" height="28" fill="#8b7cff" opacity="0">
+      <animate attributeName="x" from="0" to="393" dur="1.3s" begin="0.15s" fill="freeze" calcMode="spline" keySplines="0.3 0.1 0.2 1"/>
+      <animate attributeName="opacity" values="0;1" dur="0.01s" begin="0.15s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" dur="0.9s" begin="1.45s" repeatCount="indefinite"/>
+    </rect>
+
+    <text x="408" y="30" font-size="22" opacity="0">👋
+      <animate attributeName="opacity" from="0" to="1" begin="1.5s" dur="0.4s" fill="freeze"/>
+    </text>
+
+    <text x="1" y="62" font-family="ui-monospace,'JetBrains Mono',monospace" font-size="14" fill="#8b8b95" opacity="0">AI/ML Engineer — production RAG, distributed testing, CI/CD
+      <animate attributeName="opacity" from="0" to="1" begin="1.7s" dur="0.6s" fill="freeze"/>
+    </text>
+  </g>
+</svg>
