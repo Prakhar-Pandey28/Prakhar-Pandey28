@@ -41,14 +41,14 @@
       <animate attributeName="opacity" from="0" to="1" begin="1.3s" dur="0.4s" fill="freeze"/>
     </g>
     <g class="line">
-      <text x="20" y="166" class="k">Record</text>
-      <text x="128" y="166" class="v">152 tests · 100% CI pass rate</text>
+      <text x="20" y="166" class="k">Approach</text>
+      <text x="128" y="166" class="v">Evaluation-first engineering</text>
       <animate attributeName="opacity" from="0" to="1" begin="1.7s" dur="0.4s" fill="freeze"/>
     </g>
     <g class="line">
       <text x="20" y="190" class="k">Status</text>
       <circle cx="136" cy="186" r="3.5" fill="#34d399"/>
-      <text x="146" y="190" class="v">Open to AI/ML Engineering roles</text>
+      <text x="146" y="190" class="v">Building agentic RAG systems</text>
       <animate attributeName="opacity" from="0" to="1" begin="2.1s" dur="0.4s" fill="freeze"/>
     </g>
   </g>

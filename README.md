@@ -30,10 +30,10 @@
 ---
 
 Automation-focused AI/ML Engineer building production RAG evaluation pipelines,
-distributed-systems test suites, and reliable CI/CD — currently a 152-test
-regression suite with a 100% CI pass rate on financial, capital-at-risk systems.
+distributed-systems test suites, and reliable CI/CD for production financial
+systems.
 
-- 🔭 Currently building an [agentic RAG-powered portfolio](https://prakhar-ai-portfolio.vercel.app) — architecture gallery, live GitHub analytics, and a retrieval-grounded AI playground, all open source.
+- 🔭 Currently building an [agentic RAG-powered portfolio](https://prakhar-ai-portfolio.vercel.app) — architecture gallery, live GitHub analytics, and a retrieval-grounded AI playground.
 - 🧪 Focused on evaluation: RAG grounding/hallucination testing, distributed-systems edge cases, SQL-verified backend state.
 - 🌱 Currently deepening LangGraph orchestration and semantic-search-based retrieval.
 - 📫 Reach me at **prakharpandey2811@gmail.com** or on [LinkedIn](https://linkedin.com/in/pandeyprakhar11).
